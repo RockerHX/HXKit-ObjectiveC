@@ -21,6 +21,7 @@
     });
 }
 
+
 + (instancetype)hx_dictionaryWithObjects:(const id [])objects forKeys:(const id<NSCopying> [])keys count:(NSUInteger)cnt {
     id safeObjects[cnt];
     id safeKeys[cnt];
@@ -41,6 +42,7 @@
     
     return [self hx_dictionaryWithObjects:safeObjects forKeys:safeKeys count:j];
 }
+
 
 - (instancetype)hx_initWithObjects:(const id [])objects forKeys:(const id<NSCopying> [])keys count:(NSUInteger)cnt {
     id safeObjects[cnt];

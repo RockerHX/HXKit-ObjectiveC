@@ -21,6 +21,7 @@
     });
 }
 
+
 - (NSMethodSignature *)hx_methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *sig = [self hx_methodSignatureForSelector:aSelector];
     if (sig) {
@@ -29,6 +30,7 @@
     
     return [NSMethodSignature signatureWithObjCTypes:@encode(void)];
 }
+
 
 - (void)hx_forwardInvocation:(NSInvocation *)anInvocation {
     NSUInteger returnLength = [[anInvocation methodSignature] methodReturnLength];

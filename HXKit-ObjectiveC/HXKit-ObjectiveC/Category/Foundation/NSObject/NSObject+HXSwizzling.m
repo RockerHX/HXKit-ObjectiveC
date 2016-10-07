@@ -34,6 +34,7 @@
     return YES;
 }
 
+
 + (BOOL)hx_swizzleClassMethod:(SEL)origSel withMethod:(SEL)altSel {
     return [object_getClass(self) hx_swizzleMethod:origSel withMethod:altSel];
 }
