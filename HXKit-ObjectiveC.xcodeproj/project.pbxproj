@@ -101,14 +101,9 @@
 		48EBFA0F1DA78AA20016F047 /* HXKit-ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				48EBFA131DA78AA20016F047 /* AppDelegate.h */,
-				48EBFA141DA78AA20016F047 /* AppDelegate.m */,
-				48EBFA161DA78AA20016F047 /* ViewController.h */,
-				48EBFA171DA78AA20016F047 /* ViewController.m */,
-				48EBFA191DA78AA20016F047 /* Main.storyboard */,
-				48EBFA1C1DA78AA20016F047 /* Assets.xcassets */,
-				48EBFA1E1DA78AA20016F047 /* LaunchScreen.storyboard */,
-				48EBFA211DA78AA20016F047 /* Info.plist */,
+				48EBFA451DA7B01A0016F047 /* Codes */,
+				48EBFA441DA7AFFF0016F047 /* UI */,
+				48EBFA431DA7AFDA0016F047 /* Resources */,
 				48EBFA101DA78AA20016F047 /* Supporting Files */,
 			);
 			path = "HXKit-ObjectiveC";
@@ -138,6 +133,35 @@
 				48EBFA371DA78AA20016F047 /* Info.plist */,
 			);
 			path = "HXKit-ObjectiveCUITests";
+			sourceTree = "<group>";
+		};
+		48EBFA431DA7AFDA0016F047 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48EBFA1C1DA78AA20016F047 /* Assets.xcassets */,
+				48EBFA1E1DA78AA20016F047 /* LaunchScreen.storyboard */,
+				48EBFA211DA78AA20016F047 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48EBFA441DA7AFFF0016F047 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				48EBFA191DA78AA20016F047 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		48EBFA451DA7B01A0016F047 /* Codes */ = {
+			isa = PBXGroup;
+			children = (
+				48EBFA131DA78AA20016F047 /* AppDelegate.h */,
+				48EBFA141DA78AA20016F047 /* AppDelegate.m */,
+				48EBFA161DA78AA20016F047 /* ViewController.h */,
+				48EBFA171DA78AA20016F047 /* ViewController.m */,
+			);
+			name = Codes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
