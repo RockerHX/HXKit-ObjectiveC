@@ -422,7 +422,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "HXKit-ObjectiveC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cave.HXKit-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "HXKit-ObjectiveC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cave.HXKit-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +509,7 @@
 				48EBFA3C1DA78AA20016F047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48EBFA3D1DA78AA20016F047 /* Build configuration list for PBXNativeTarget "HXKit-ObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				48EBFA3F1DA78AA20016F047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48EBFA401DA78AA20016F047 /* Build configuration list for PBXNativeTarget "HXKit-ObjectiveCUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				48EBFA421DA78AA20016F047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
