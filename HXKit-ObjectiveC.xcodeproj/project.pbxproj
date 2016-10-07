@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4859A62D1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */; };
+		4859A62E1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */; };
+		4859A62F1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4859A61F1DA7B26A00A6832D /* UIImage+Loaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Loaded.h"; sourceTree = "<group>"; };
+		4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Loaded.m"; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +83,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4859A60F1DA7B26A00A6832D /* HXKit-ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				4859A6101DA7B26A00A6832D /* Category */,
+			);
+			path = "HXKit-ObjectiveC";
+			sourceTree = "<group>";
+		};
+		4859A6101DA7B26A00A6832D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4859A61D1DA7B26A00A6832D /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4859A61D1DA7B26A00A6832D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4859A61E1DA7B26A00A6832D /* UIImage */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4859A61E1DA7B26A00A6832D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				4859A61F1DA7B26A00A6832D /* UIImage+Loaded.h */,
+				4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		48EBFA041DA78AA20016F047 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +194,7 @@
 		48EBFA451DA7B01A0016F047 /* Codes */ = {
 			isa = PBXGroup;
 			children = (
+				4859A60F1DA7B26A00A6832D /* HXKit-ObjectiveC */,
 				48EBFA131DA78AA20016F047 /* AppDelegate.h */,
 				48EBFA141DA78AA20016F047 /* AppDelegate.m */,
 				48EBFA161DA78AA20016F047 /* ViewController.h */,
@@ -297,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4859A62D1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				48EBFA181DA78AA20016F047 /* ViewController.m in Sources */,
 				48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */,
 				48EBFA121DA78AA20016F047 /* main.m in Sources */,
@@ -307,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4859A62E1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				48EBFA2B1DA78AA20016F047 /* HXKit_ObjectiveCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4859A62F1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				48EBFA361DA78AA20016F047 /* HXKit_ObjectiveCUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
