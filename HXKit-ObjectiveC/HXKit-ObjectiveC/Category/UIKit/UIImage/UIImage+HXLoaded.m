@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+HXLoaded.h"
-#import <objc/runtime.h>
+#import "NSObject+HXSwizzling.h"
 
 
 @implementation UIImage (HXLoaded)
@@ -17,12 +17,10 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        Method imageNamed = class_getClassMethod(self, @selector(imageNamed:));
-        Method hx_imageNamed = class_getClassMethod(self, @selector(hx_imageNamed:));
-        
-        method_exchangeImplementations(hx_imageNamed, imageNamed);
+        [self hx_swizzleMethod:@selector(imageNamed:) withMethod:@selector(hx_imageNamed:)];
     });
 }
+
 
 + (instancetype)hx_imageNamed:(NSString *)name {
     
