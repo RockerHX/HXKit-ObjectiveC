@@ -13,6 +13,9 @@
 		4859A6451DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A63B1DA7B38200A6832D /* NSObject+HXSwizzling.m */; };
 		4859A6461DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A63B1DA7B38200A6832D /* NSObject+HXSwizzling.m */; };
 		4859A6471DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A63B1DA7B38200A6832D /* NSObject+HXSwizzling.m */; };
+		4859A64B1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A64A1DA7B3E100A6832D /* NSNull+HXNilSafe.m */; };
+		4859A64C1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A64A1DA7B3E100A6832D /* NSNull+HXNilSafe.m */; };
+		4859A64D1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A64A1DA7B3E100A6832D /* NSNull+HXNilSafe.m */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -45,6 +48,8 @@
 		4859A6201DA7B26A00A6832D /* UIImage+Loaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Loaded.m"; sourceTree = "<group>"; };
 		4859A63A1DA7B38200A6832D /* NSObject+HXSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HXSwizzling.h"; sourceTree = "<group>"; };
 		4859A63B1DA7B38200A6832D /* NSObject+HXSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXSwizzling.m"; sourceTree = "<group>"; };
+		4859A6491DA7B3E100A6832D /* NSNull+HXNilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+HXNilSafe.h"; sourceTree = "<group>"; };
+		4859A64A1DA7B3E100A6832D /* NSNull+HXNilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+HXNilSafe.m"; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 		4859A6301DA7B38200A6832D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				4859A6481DA7B3E100A6832D /* NSNull */,
 				4859A6391DA7B38200A6832D /* NSObject */,
 			);
 			path = Foundation;
@@ -137,6 +143,15 @@
 				4859A63B1DA7B38200A6832D /* NSObject+HXSwizzling.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		4859A6481DA7B3E100A6832D /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				4859A6491DA7B3E100A6832D /* NSNull+HXNilSafe.h */,
+				4859A64A1DA7B3E100A6832D /* NSNull+HXNilSafe.m */,
+			);
+			path = NSNull;
 			sourceTree = "<group>";
 		};
 		48EBFA041DA78AA20016F047 = {
@@ -359,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4859A64B1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */,
 				4859A62D1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				48EBFA181DA78AA20016F047 /* ViewController.m in Sources */,
 				4859A6451DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */,
@@ -373,6 +389,7 @@
 			files = (
 				4859A62E1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				4859A6461DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */,
+				4859A64C1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */,
 				48EBFA2B1DA78AA20016F047 /* HXKit_ObjectiveCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +400,7 @@
 			files = (
 				4859A62F1DA7B26A00A6832D /* UIImage+Loaded.m in Sources */,
 				4859A6471DA7B38200A6832D /* NSObject+HXSwizzling.m in Sources */,
+				4859A64D1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */,
 				48EBFA361DA78AA20016F047 /* HXKit_ObjectiveCUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
