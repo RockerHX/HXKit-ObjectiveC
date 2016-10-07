@@ -1,16 +1,17 @@
 //
-//  UIImage+Loaded.m
+//  UIImage+HXLoaded.m
 //  HXKit-ObjectiveC
 //
 //  Created by ShiCang on 16/10/7.
 //  Copyright © 2016年 Cave. All rights reserved.
 //
 
-#import "UIImage+Loaded.h"
+#import "UIImage+HXLoaded.h"
 #import <objc/runtime.h>
 
 
-@implementation UIImage (Loaded)
+@implementation UIImage (HXLoaded)
+
 
 + (void)load {
     
@@ -32,5 +33,6 @@
     
     return image;
 }
+
 
 @end

@@ -1,5 +1,5 @@
 //
-//  UIImage+Loaded.h
+//  UIImage+HXLoaded.h
 //  HXKit-ObjectiveC
 //
 //  Created by ShiCang on 16/10/7.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface UIImage (Loaded)
+@interface UIImage (HXLoaded)
 
 @end
