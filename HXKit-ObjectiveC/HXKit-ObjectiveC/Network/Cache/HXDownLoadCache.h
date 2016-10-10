@@ -29,7 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  Custom Request
  */
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request completionHandler:(void (^)(HXDownLoadCache *cache, NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url configuration:(NSURLSessionConfiguration *)configuration completionHandler:(void (^)(HXDownLoadCache *cache, NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request configuration:(NSURLSessionConfiguration *)configuration completionHandler:(void (^)(HXDownLoadCache *cache, NSData *data, NSURLResponse *response, NSError *error))completionHandler;
 
 @end

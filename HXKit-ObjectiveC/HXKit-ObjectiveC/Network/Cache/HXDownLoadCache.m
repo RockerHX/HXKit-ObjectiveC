@@ -9,6 +9,9 @@
 #import "HXDownLoadCache.h"
 
 
+static float TimeOutInterval = 10.0f;
+
+
 @implementation HXDownLoadCache
 
 
@@ -35,7 +38,7 @@
 #pragma mark - Public Methods
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10.0f];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:TimeOutInterval];
     return [self downLoadWithRequest:request completionHandler:completionHandler];
 }
 
@@ -59,6 +62,7 @@
 
 #pragma mark - Private Methods
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request session:(NSURLSession *)session completionHandler:(void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
+    
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSData *data = [NSData dataWithContentsOfURL:location];
