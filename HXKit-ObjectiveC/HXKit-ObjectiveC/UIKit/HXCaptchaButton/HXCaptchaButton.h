@@ -12,7 +12,7 @@
 @interface HXCaptchaButton : UIButton
 
 
-@property (nonatomic, assign) NSTimeInterval duration;
+@property (nonatomic, assign) NSTimeInterval duration;      // Default is 60s
 
 
 - (void)timingWithDuration:(NSTimeInterval)duration
