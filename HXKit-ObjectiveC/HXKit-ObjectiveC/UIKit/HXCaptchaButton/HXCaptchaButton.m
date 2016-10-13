@@ -88,14 +88,14 @@ static NSString *TextPrompt = @"获取验证码";
 }
 
 - (void)stop {
-    self.enabled = YES;
-    [_countDownTimer invalidate];
     
+    [_countDownTimer invalidate];
     [self setTitle:_prompt forState:UIControlStateNormal];
     
     if (_endBlock) {
         _endBlock(self);
     }
+    self.enabled = YES;
 }
 
 #pragma mark - Delloc Methods
