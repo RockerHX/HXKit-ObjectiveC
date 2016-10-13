@@ -8,6 +8,7 @@
 
 #import "HXCaptchaButton.h"
 
+
 typedef BOOL(^StartBlock)(HXCaptchaButton *);
 typedef void(^EndBlock)(HXCaptchaButton *);
 
@@ -16,7 +17,9 @@ static NSTimeInterval TimeDuration = 60.0f;
 
 static NSString *TextPrompt = @"获取验证码";
 
+
 @implementation HXCaptchaButton {
+    
     NSTimeInterval _timeOut;
     NSTimer *_countDownTimer;
     
@@ -24,8 +27,10 @@ static NSString *TextPrompt = @"获取验证码";
     EndBlock _endBlock;
 }
 
+
 #pragma mark - Init Methods
 - (instancetype)initWithFrame:(CGRect)frame {
+    
     self = [super initWithFrame:frame];
     if (self) {
         [self initConfigure];
@@ -33,7 +38,9 @@ static NSString *TextPrompt = @"获取验证码";
     return self;
 }
 
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self initConfigure];
@@ -41,19 +48,25 @@ static NSString *TextPrompt = @"获取验证码";
     return self;
 }
 
+
 #pragma mark - Config Methods
 - (void)initConfigure {
+    
     _duration = TimeDuration;
     _prompt = TextPrompt;
 }
 
+
 #pragma mark - Parent Methods
 - (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event {
+    
     [self startCountDown];
 }
 
+
 #pragma mark - Private Methods
 - (void)startCountDown {
+    
     if (self.enabled) {
         if (_startBlock) {
             if (_startBlock(self)) {
@@ -66,7 +79,9 @@ static NSString *TextPrompt = @"获取验证码";
     }
 }
 
+
 - (void)timeFireMethod {
+    
     _timeOut--;
     [self setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
     
@@ -75,17 +90,21 @@ static NSString *TextPrompt = @"获取验证码";
     }
 }
 
+
 #pragma mark - Public Methods
 - (void)timingWithDuration:(NSTimeInterval)duration start:(BOOL(^)(HXCaptchaButton *))start end:(void(^)(HXCaptchaButton *))end {
     
     _duration = duration;
     [self timing:start end:end];
 }
+
+
 - (void)timing:(BOOL (^)(HXCaptchaButton *))start end:(void (^)(HXCaptchaButton *))end {
     
     _startBlock = start;
     _endBlock = end;
 }
+
 
 - (void)stop {
     
@@ -98,10 +117,12 @@ static NSString *TextPrompt = @"获取验证码";
     self.enabled = YES;
 }
 
+
 #pragma mark - Delloc Methods
 - (void)dealloc {
-    // 如果View被移除，定时器需要废除掉
+    
     [_countDownTimer invalidate];
 }
+
 
 @end
