@@ -22,7 +22,6 @@ static NSString *TextPrompt = @"获取验证码";
     
     StartBlock _startBlock;
     EndBlock _endBlock;
-    HXSecurityType _type;
 }
 
 #pragma mark - Init Methods
@@ -44,7 +43,6 @@ static NSString *TextPrompt = @"获取验证码";
 
 #pragma mark - Config Methods
 - (void)initConfigure {
-    _type     = HXSecurityTypeMessage;
     _duration = TimeDuration;
 }
 
@@ -76,12 +74,11 @@ static NSString *TextPrompt = @"获取验证码";
     
     if(_timeOut < TimeOutFlag){
         [self stop];
-        _type = HXSecurityTypeCall;
     }
 }
 
 #pragma mark - Public Methods
-- (void)timingStart:(BOOL(^)(HXCaptchaButton *button))start end:(void(^)(HXCaptchaButton *button))end {
+- (void)timing:(BOOL (^)(HXCaptchaButton *))start end:(void (^)(HXCaptchaButton *))end {
     _startBlock = start;
     _endBlock = end;
 }
