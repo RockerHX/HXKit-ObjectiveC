@@ -15,6 +15,10 @@
 @property (nonatomic, assign) NSTimeInterval duration;
 
 
+- (void)timingWithDuration:(NSTimeInterval)duration
+                     start:(BOOL(^)(HXCaptchaButton *button))start
+                       end:(void(^)(HXCaptchaButton *button))end;
+
 - (void)timing:(BOOL(^)(HXCaptchaButton *button))start
            end:(void(^)(HXCaptchaButton *button))end;
 
