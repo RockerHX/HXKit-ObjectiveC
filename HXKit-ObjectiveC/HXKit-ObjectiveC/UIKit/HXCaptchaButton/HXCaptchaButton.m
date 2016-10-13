@@ -44,6 +44,7 @@ static NSString *TextPrompt = @"获取验证码";
 #pragma mark - Config Methods
 - (void)initConfigure {
     _duration = TimeDuration;
+    _prompt = TextPrompt;
 }
 
 #pragma mark - Parent Methods
@@ -90,7 +91,7 @@ static NSString *TextPrompt = @"获取验证码";
     self.enabled = YES;
     [_countDownTimer invalidate];
     
-    [self setTitle:TextPrompt forState:UIControlStateNormal];
+    [self setTitle:_prompt forState:UIControlStateNormal];
     
     if (_endBlock) {
         _endBlock(self);
