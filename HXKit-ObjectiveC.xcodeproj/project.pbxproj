@@ -18,6 +18,7 @@
 		4859A6711DAFDE4400A6832D /* HXCaptchaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6701DAFDE4400A6832D /* HXCaptchaButton.m */; };
 		4859A6741DB26C8600A6832D /* UIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4859A6721DB26C8600A6832D /* UIKit.storyboard */; };
 		4859A6801DB271E200A6832D /* HXCaptchaDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A67F1DB271E200A6832D /* HXCaptchaDemoViewController.m */; };
+		4859A6871DB2729900A6832D /* HXCaptchaDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4859A6851DB2729900A6832D /* HXCaptchaDemo.storyboard */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -63,6 +64,7 @@
 		4859A6731DB26C8600A6832D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIKit.storyboard; sourceTree = "<group>"; };
 		4859A67E1DB271E200A6832D /* HXCaptchaDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCaptchaDemoViewController.h; sourceTree = "<group>"; };
 		4859A67F1DB271E200A6832D /* HXCaptchaDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCaptchaDemoViewController.m; sourceTree = "<group>"; };
+		4859A6861DB2729900A6832D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HXCaptchaDemo.storyboard; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -296,6 +298,14 @@
 			path = HXCaptchaButton;
 			sourceTree = "<group>";
 		};
+		4859A6811DB2723300A6832D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4859A6851DB2729900A6832D /* HXCaptchaDemo.storyboard */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 		48EBFA041DA78AA20016F047 = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +377,7 @@
 		48EBFA441DA7AFFF0016F047 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4859A6811DB2723300A6832D /* UIKit */,
 				48EBFA191DA78AA20016F047 /* Main.storyboard */,
 				4859A6721DB26C8600A6832D /* UIKit.storyboard */,
 			);
@@ -495,6 +506,7 @@
 				48EBFA201DA78AA20016F047 /* LaunchScreen.storyboard in Resources */,
 				4859A6741DB26C8600A6832D /* UIKit.storyboard in Resources */,
 				48EBFA1D1DA78AA20016F047 /* Assets.xcassets in Resources */,
+				4859A6871DB2729900A6832D /* HXCaptchaDemo.storyboard in Resources */,
 				48EBFA1B1DA78AA20016F047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +585,14 @@
 				4859A6731DB26C8600A6832D /* Base */,
 			);
 			name = UIKit.storyboard;
+			sourceTree = "<group>";
+		};
+		4859A6851DB2729900A6832D /* HXCaptchaDemo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4859A6861DB2729900A6832D /* Base */,
+			);
+			name = HXCaptchaDemo.storyboard;
 			sourceTree = "<group>";
 		};
 		48EBFA191DA78AA20016F047 /* Main.storyboard */ = {
