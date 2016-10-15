@@ -33,6 +33,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="31s-5m-jij" kind="show" id="i7f-qb-Rwe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -48,6 +51,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYC-o2-leu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="422" y="63"/>
+        </scene>
+        <!--HXCaptchaButton Demo-->
+        <scene sceneID="YFG-zU-9t8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fy-Xl-Lhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="31s-5m-jij" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UeG-sc-Xgn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QbX-sf-nP7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G83-ws-viW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH1-GK-k7e">
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TH1-GK-k7e" firstAttribute="centerX" secondItem="G83-ws-viW" secondAttribute="centerX" id="HXB-x4-vCN"/>
+                            <constraint firstItem="TH1-GK-k7e" firstAttribute="centerY" secondItem="G83-ws-viW" secondAttribute="centerY" id="Ycd-J9-rcD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HXCaptchaButton Demo" id="NSe-vw-sMf"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1177" y="63"/>
         </scene>
     </scenes>
 </document>
