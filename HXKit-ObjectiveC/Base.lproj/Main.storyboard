@@ -33,6 +33,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jX1-pC-WYB" kind="show" id="Ig1-dd-wjK"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="5K4-CP-yaG" style="IBUITableViewCellStyleDefault" id="qI4-Mg-PSL">
                                         <rect key="frame" x="0.0" y="108" width="375" height="44"/>
@@ -97,6 +100,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPp-mo-4nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1178" y="63"/>
+        </scene>
+        <!--UIKit-->
+        <scene sceneID="OX3-ts-DUn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIKit" id="jX1-pC-WYB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQp-sW-Gi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="62"/>
         </scene>
     </scenes>
 </document>

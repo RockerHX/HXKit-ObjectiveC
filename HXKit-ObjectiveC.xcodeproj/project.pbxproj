@@ -16,6 +16,7 @@
 		4859A6671DA7B93400A6832D /* NSDictionaryNilSafeCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6631DA7B87A00A6832D /* NSDictionaryNilSafeCTests.m */; };
 		4859A66C1DABD7DE00A6832D /* HXDownLoadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A66B1DABD7DE00A6832D /* HXDownLoadCache.m */; };
 		4859A6711DAFDE4400A6832D /* HXCaptchaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4859A6701DAFDE4400A6832D /* HXCaptchaButton.m */; };
+		4859A6741DB26C8600A6832D /* UIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4859A6721DB26C8600A6832D /* UIKit.storyboard */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -58,6 +59,7 @@
 		4859A66B1DABD7DE00A6832D /* HXDownLoadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXDownLoadCache.m; sourceTree = "<group>"; };
 		4859A66F1DAFDE4400A6832D /* HXCaptchaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCaptchaButton.h; sourceTree = "<group>"; };
 		4859A6701DAFDE4400A6832D /* HXCaptchaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCaptchaButton.m; sourceTree = "<group>"; };
+		4859A6731DB26C8600A6832D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIKit.storyboard; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				48EBFA191DA78AA20016F047 /* Main.storyboard */,
+				4859A6721DB26C8600A6832D /* UIKit.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48EBFA201DA78AA20016F047 /* LaunchScreen.storyboard in Resources */,
+				4859A6741DB26C8600A6832D /* UIKit.storyboard in Resources */,
 				48EBFA1D1DA78AA20016F047 /* Assets.xcassets in Resources */,
 				48EBFA1B1DA78AA20016F047 /* Main.storyboard in Resources */,
 			);
@@ -517,6 +521,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4859A6721DB26C8600A6832D /* UIKit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4859A6731DB26C8600A6832D /* Base */,
+			);
+			name = UIKit.storyboard;
+			sourceTree = "<group>";
+		};
 		48EBFA191DA78AA20016F047 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
