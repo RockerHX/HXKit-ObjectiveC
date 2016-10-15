@@ -54,6 +54,8 @@ static NSString *TextPrompt = @"获取验证码";
     
     _duration = TimeDuration;
     _prompt = TextPrompt;
+    
+    [self setButtonPrompt];
 }
 
 
@@ -91,6 +93,13 @@ static NSString *TextPrompt = @"获取验证码";
 }
 
 
+- (void)setButtonPrompt {
+    
+    [_countDownTimer invalidate];
+    [self setTitle:_prompt forState:UIControlStateNormal];
+}
+
+
 #pragma mark - Public Methods
 - (void)timingWithDuration:(NSTimeInterval)duration start:(BOOL(^)(HXCaptchaButton *))start end:(void(^)(HXCaptchaButton *))end {
     
@@ -108,8 +117,7 @@ static NSString *TextPrompt = @"获取验证码";
 
 - (void)stop {
     
-    [_countDownTimer invalidate];
-    [self setTitle:_prompt forState:UIControlStateNormal];
+    [self setButtonPrompt];
     
     if (_endBlock) {
         _endBlock(self);
