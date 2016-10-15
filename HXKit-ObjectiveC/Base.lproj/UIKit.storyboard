@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="422" y="63"/>
         </scene>
-        <!--HXCaptchaDemoViewController-->
+        <!--HXCaptchaDemo-->
         <scene sceneID="muP-8i-Wb2">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HXCaptchaDemoViewController" storyboardName="HXCaptchaDemo" referencedIdentifier="HXCaptchaDemoViewController" id="7hy-FX-dyw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="HXCaptchaDemo" id="7hy-FX-dyw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUz-Zs-P5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1070" y="62"/>
