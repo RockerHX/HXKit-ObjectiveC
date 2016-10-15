@@ -7,31 +7,36 @@
 //
 
 #import "HXCaptchaDemoViewController.h"
+#import "HXCaptchaButton.h"
+
 
 @interface HXCaptchaDemoViewController ()
-
 @end
+
 
 @implementation HXCaptchaDemoViewController
 
+
+#pragma mark - View Controller Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//    // Default Duration.
+//    [_button timing:^BOOL(HXCaptchaButton *button) {
+//        NSLog(@"Timing Started.");
+//        return YES;
+//    } end:^(HXCaptchaButton *button) {
+//        NSLog(@"Timing Ended.");
+//    }];
+    
+    // Timing With Duration.
+    [_button timingWithDuration:10 start:^BOOL(HXCaptchaButton *button) {
+        NSLog(@"Timing Started.");
+        return YES;
+    } end:^(HXCaptchaButton *button) {
+        NSLog(@"Timing Ended.");
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

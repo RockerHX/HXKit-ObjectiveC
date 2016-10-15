@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class HXCaptchaButton;
+
+
 @interface HXCaptchaDemoViewController : UIViewController
+
+
+@property (nonatomic, weak) IBOutlet HXCaptchaButton *button;
+
 
 @end
