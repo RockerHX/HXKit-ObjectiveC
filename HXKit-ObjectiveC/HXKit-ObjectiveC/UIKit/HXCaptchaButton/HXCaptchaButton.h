@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
+// Must use UIButtonTypeCustom, If not count down will be flickering.
 @interface HXCaptchaButton : UIButton
 
 
@@ -16,12 +17,12 @@
 @property (nonatomic, strong) NSString       *prompt;        // Captcha Button Prompt
 
 
+- (void)timing:(BOOL(^)(HXCaptchaButton *button))start
+           end:(void(^)(HXCaptchaButton *button))end;
+
 - (void)timingWithDuration:(NSTimeInterval)duration
                      start:(BOOL(^)(HXCaptchaButton *button))start
                        end:(void(^)(HXCaptchaButton *button))end;
-
-- (void)timing:(BOOL(^)(HXCaptchaButton *button))start
-           end:(void(^)(HXCaptchaButton *button))end;
 
 - (void)stop;
 
