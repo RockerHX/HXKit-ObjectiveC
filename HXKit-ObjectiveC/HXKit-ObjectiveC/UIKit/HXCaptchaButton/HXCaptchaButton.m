@@ -101,17 +101,20 @@ static NSString *TextPrompt = @"获取验证码";
 
 
 #pragma mark - Public Methods
-- (void)timingWithDuration:(NSTimeInterval)duration start:(BOOL(^)(HXCaptchaButton *))start end:(void(^)(HXCaptchaButton *))end {
-    
-    _duration = duration;
-    [self timing:start end:end];
-}
-
-
-- (void)timing:(BOOL (^)(HXCaptchaButton *))start end:(void (^)(HXCaptchaButton *))end {
+- (void)timing:(BOOL (^)(HXCaptchaButton *))start
+           end:(void (^)(HXCaptchaButton *))end {
     
     _startBlock = start;
     _endBlock = end;
+}
+
+
+- (void)timingWithDuration:(NSTimeInterval)duration
+                     start:(BOOL(^)(HXCaptchaButton *))start
+                       end:(void(^)(HXCaptchaButton *))end {
+    
+    _duration = duration;
+    [self timing:start end:end];
 }
 
 
