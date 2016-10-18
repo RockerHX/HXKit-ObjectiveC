@@ -25,6 +25,8 @@ static NSString *TextPrompt = @"获取验证码";
     
     StartBlock _startBlock;
     EndBlock _endBlock;
+    
+    dispatch_source_t _timer;
 }
 
 
@@ -67,14 +69,39 @@ static NSString *TextPrompt = @"获取验证码";
 
 
 #pragma mark - Private Methods
+dispatch_source_t GreateDispatchTimer(uint64_t interval,
+                                      uint64_t leeway,
+                                      dispatch_queue_t queue,
+                                      dispatch_block_t block) {
+    
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    if (timer) {
+        dispatch_source_set_timer(timer, dispatch_walltime(NULL, 0), interval, leeway);
+        dispatch_source_set_event_handler(timer, block);
+        dispatch_resume(timer);
+    }
+    return timer;
+}
+
+
 - (void)startCountDown {
     
     if (self.enabled) {
         if (_startBlock) {
             if (_startBlock(self)) {
                 _timeOut = _duration;
-                [self setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
-                _countDownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timeFireMethod) userInfo:nil repeats:YES];
+                
+                __weak __typeof__(self)weakSelf = self;
+                _timer = GreateDispatchTimer(NSEC_PER_SEC, USEC_PER_SEC, dispatch_get_main_queue(), ^{
+                    __strong __typeof__(self)strongSelf = weakSelf;
+                    [strongSelf setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
+                    
+                    if(_timeOut <= TimeOutFlag) {
+                        [strongSelf stop];
+                    }
+                    _timeOut--;
+                });
+                
                 self.enabled = NO;
             }
         }
@@ -82,20 +109,11 @@ static NSString *TextPrompt = @"获取验证码";
 }
 
 
-- (void)timeFireMethod {
-    
-    _timeOut--;
-    [self setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
-    
-    if(_timeOut < TimeOutFlag){
-        [self stop];
-    }
-}
-
-
 - (void)setButtonPrompt {
     
-    [_countDownTimer invalidate];
+    if (_timer) {
+        dispatch_source_cancel(_timer);
+    }
     [self setTitle:_prompt forState:UIControlStateNormal];
 }
 
