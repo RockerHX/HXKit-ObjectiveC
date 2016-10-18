@@ -12,7 +12,7 @@
 typedef BOOL(^StartBlock)(HXCaptchaButton *);
 typedef void(^EndBlock)(HXCaptchaButton *);
 
-static NSTimeInterval TimeOutFlag = 1;
+static NSTimeInterval TimeOutFlag = 0;
 static NSTimeInterval TimeDuration = 60.0f;
 
 static NSString *TextPrompt = @"获取验证码";
