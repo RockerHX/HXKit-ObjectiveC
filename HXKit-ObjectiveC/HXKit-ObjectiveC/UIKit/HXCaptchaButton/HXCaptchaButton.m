@@ -91,13 +91,11 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
             if (_startBlock(self)) {
                 _timeOut = _duration;
                 
-                __weak __typeof__(self)weakSelf = self;
                 _timer = GreateDispatchTimer(NSEC_PER_SEC, USEC_PER_SEC, dispatch_get_main_queue(), ^{
-                    __strong __typeof__(self)strongSelf = weakSelf;
-                    [strongSelf setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
+                    [self setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
                     
                     if(_timeOut <= TimeOutFlag) {
-                        [strongSelf stop];
+                        [self stop];
                     }
                     _timeOut--;
                 });
@@ -113,6 +111,7 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     
     if (_timer) {
         dispatch_source_cancel(_timer);
+        _timer = nil;
     }
     [self setTitle:_prompt forState:UIControlStateNormal];
 }
