@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HXDownLoadCache : NSObject
 
+
 @property (nonatomic, weak, readonly) NSURLCache *cache;
+
 
 + (instancetype)cache;
 + (instancetype)cacheWithCache:(NSURLCache *)cache;
@@ -33,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url configuration:(NSURLSessionConfiguration *)configuration completionHandler:(void (^)(HXDownLoadCache *cache, NSData *data, NSURLResponse *response, NSError *error))completionHandler;
 
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request configuration:(NSURLSessionConfiguration *)configuration completionHandler:(void (^)(HXDownLoadCache *cache, NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+
 
 @end
 
