@@ -3,7 +3,7 @@
 //  HXKit-ObjectiveCUITests
 //
 //  Created by ShiCang on 16/10/7.
-//  Copyright © 2016年 Cave. All rights reserved.
+//  Copyright © 2016年 Caver. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

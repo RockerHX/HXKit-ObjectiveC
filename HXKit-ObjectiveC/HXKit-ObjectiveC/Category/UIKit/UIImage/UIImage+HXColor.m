@@ -3,7 +3,7 @@
 //  HXKit-ObjectiveC
 //
 //  Created by ShiCang on 16/10/29.
-//  Copyright © 2016年 Cave. All rights reserved.
+//  Copyright © 2016年 Caver. All rights reserved.
 //
 
 #import "UIImage+HXColor.h"
