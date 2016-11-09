@@ -6,10 +6,11 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 
+
 @interface UIView (HXFrame)
+
 
 // shortcuts for positions
 @property (nonatomic) CGFloat x;
@@ -31,5 +32,6 @@
 // shortcuts for frame properties
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign)  CGSize size;
+
 
 @end
