@@ -13,7 +13,7 @@ NSString *const hx_kLoginNotification   = @"hx_kLoginNotification";
 NSString *const hx_kLogoutNotification  = @"hx_kLogoutNotification";
 
 
-@implementation NSObject (LoginAction)
+@implementation NSObject (HXLoginAction)
 
 
 - (void)shouldLogin {

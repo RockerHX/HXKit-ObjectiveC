@@ -13,7 +13,7 @@ FOUNDATION_EXPORT NSString *const hx_kLoginNotification;
 FOUNDATION_EXPORT NSString *const hx_kLogoutNotification;
 
 
-@interface NSObject (LoginAction)
+@interface NSObject (HXLoginAction)
 
 
 - (void)shouldLogin;
