@@ -22,6 +22,7 @@
 		48E04CDC1DC446F10002FBE6 /* UIImage+HXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E04CDB1DC446F10002FBE6 /* UIImage+HXColor.m */; };
 		48E178E31DD3136C00C925B7 /* NSObject+HXLoginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178E21DD3136C00C925B7 /* NSObject+HXLoginAction.m */; };
 		48E178E71DD3140A00C925B7 /* UIView+HXFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178E61DD3140A00C925B7 /* UIView+HXFindViewController.m */; };
+		48E178EA1DD3170D00C925B7 /* UIView+HXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178E91DD3170D00C925B7 /* UIView+HXFrame.m */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -74,6 +75,8 @@
 		48E178E21DD3136C00C925B7 /* NSObject+HXLoginAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXLoginAction.m"; sourceTree = "<group>"; };
 		48E178E51DD3140A00C925B7 /* UIView+HXFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HXFindViewController.h"; sourceTree = "<group>"; };
 		48E178E61DD3140A00C925B7 /* UIView+HXFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HXFindViewController.m"; sourceTree = "<group>"; };
+		48E178E81DD3170D00C925B7 /* UIView+HXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HXFrame.h"; sourceTree = "<group>"; };
+		48E178E91DD3170D00C925B7 /* UIView+HXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HXFrame.m"; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -323,6 +326,8 @@
 		48E178E41DD3140A00C925B7 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				48E178E81DD3170D00C925B7 /* UIView+HXFrame.h */,
+				48E178E91DD3170D00C925B7 /* UIView+HXFrame.m */,
 				48E178E51DD3140A00C925B7 /* UIView+HXFindViewController.h */,
 				48E178E61DD3140A00C925B7 /* UIView+HXFindViewController.m */,
 			);
@@ -558,6 +563,7 @@
 				4859A6711DAFDE4400A6832D /* HXCaptchaButton.m in Sources */,
 				4859A6561DA7B46800A6832D /* NSMutableDictionary+HXNilSafe.m in Sources */,
 				4859A64B1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */,
+				48E178EA1DD3170D00C925B7 /* UIView+HXFrame.m in Sources */,
 				48E178E31DD3136C00C925B7 /* NSObject+HXLoginAction.m in Sources */,
 				48E04CDC1DC446F10002FBE6 /* UIImage+HXColor.m in Sources */,
 				4859A62D1DA7B26A00A6832D /* UIImage+HXLoaded.m in Sources */,
