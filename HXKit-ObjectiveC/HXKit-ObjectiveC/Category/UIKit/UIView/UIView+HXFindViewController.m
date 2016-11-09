@@ -1,8 +1,9 @@
 //
 //  UIView+FindUIViewController.m
+//  HXKit-ObjectiveC
 //
 //  Created by RockerHX on 16/1/18.
-//  Copyright © 2016年 Andy Shaw. All rights reserved.
+//  Copyright © 2016年 Caver. All rights reserved.
 //
 
 #import "UIView+HXFindViewController.h"
@@ -17,7 +18,7 @@
 }
 
 
-- (instancetype)traverseResponderChainForViewController {
+- (__kindof UIResponder *)traverseResponderChainForViewController {
     id nextResponder = [self nextResponder];
     if ([nextResponder isKindOfClass:[UIViewController class]]) {
         return nextResponder;
