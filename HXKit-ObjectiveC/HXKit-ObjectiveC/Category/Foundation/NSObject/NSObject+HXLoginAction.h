@@ -1,5 +1,5 @@
 //
-//  NSObject+LoginAction.h
+//  NSObject+HXLoginAction.h
 //  HXKit-ObjectiveC
 //
 //  Created by miaios on 16/2/23.
