@@ -1,8 +1,9 @@
 //
-//  UIView+Frame.h
+//  UIView+HXFrame.h
+//  HXKit-ObjectiveC
 //
-//  Created by RockerHX
-//  Copyright (c) Andy Shaw. All rights reserved.
+//  Created by RockerHX on 14/2/28.
+//  Copyright © 2016年 Caver. All rights reserved.
 //
 
 
