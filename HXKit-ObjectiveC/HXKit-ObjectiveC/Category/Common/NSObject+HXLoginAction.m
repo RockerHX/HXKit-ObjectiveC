@@ -9,20 +9,20 @@
 #import "NSObject+HXLoginAction.h"
 
 
-NSString *const kLoginNotification   = @"kLoginNotification";
-NSString *const kLogoutNotification  = @"kLogoutNotification";
+NSString *const hx_kLoginNotification   = @"hx_kLoginNotification";
+NSString *const hx_kLogoutNotification  = @"hx_kLogoutNotification";
 
 
 @implementation NSObject (LoginAction)
 
 
 - (void)shouldLogin {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLoginNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:hx_kLoginNotification object:nil];
 }
 
 
 - (void)shouldLogout {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLogoutNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:hx_kLogoutNotification object:nil];
 }
 
 

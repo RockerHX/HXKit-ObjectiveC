@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-FOUNDATION_EXPORT NSString *const kLoginNotification;
-FOUNDATION_EXPORT NSString *const kLogoutNotification;
+FOUNDATION_EXPORT NSString *const hx_kLoginNotification;
+FOUNDATION_EXPORT NSString *const hx_kLogoutNotification;
 
 
 @interface NSObject (LoginAction)
