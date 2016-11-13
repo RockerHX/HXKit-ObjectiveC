@@ -65,23 +65,23 @@
 }
 
 
-+ (SCDeviceModelType)currentModel {
++ (HXDeviceMode)currentModel {
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
     HXDeviceType deviceType = [self deviceType];
     if ((deviceType == HXDeviceTypeIPhone) || (deviceType == HXDeviceTypeIPhoneSimulator)) {
         if (fabs(screenHeight - 480.0f) < __DBL_EPSILON__) {
-            return SCDeviceModelTypeIphone4_4S;
+            return HXDeviceModeIphone4_4S;
         } else if (fabs(screenHeight - 568.0f) < __DBL_EPSILON__) {
-            return SCDeviceModelTypeIphone5_5S;
+            return HXDeviceModeIphone5_5S;
         } else if (fabs(screenHeight - 667.0f) < __DBL_EPSILON__) {
-            return SCDeviceModelTypeIphone6;
+            return HXDeviceModeIphone6;
         } else if (fabs(screenHeight - 736.0f) < __DBL_EPSILON__) {
-            return SCDeviceModelTypeIphone6Plus;
+            return HXDeviceModeIphone6Plus;
         } else {
-            return SCDeviceModelTypeUnknow;
+            return HXDeviceModeUnknow;
         }
     }
-    return SCDeviceModelTypeIPad;
+    return HXDeviceModeIPad;
 }
 
 

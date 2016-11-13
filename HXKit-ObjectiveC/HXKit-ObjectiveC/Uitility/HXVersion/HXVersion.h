@@ -28,14 +28,14 @@ typedef NS_ENUM(NSUInteger, HXDeviceType) {
     HXDeviceTypeIPadSimulator
 };
 
-typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
-    SCDeviceModelTypeUnknow,
-    SCDeviceModelTypeIPad,
-    SCDeviceModelTypeIphone4_4S,
-    SCDeviceModelTypeIphone5_5S,
-    SCDeviceModelTypeIphone5SPrior,
-    SCDeviceModelTypeIphone6,
-    SCDeviceModelTypeIphone6Plus
+typedef NS_ENUM(NSUInteger, HXDeviceMode) {
+    HXDeviceModeUnknow,
+    HXDeviceModeIPad,
+    HXDeviceModeIphone4_4S,
+    HXDeviceModeIphone5_5S,
+    HXDeviceModeIphone5SPrior,
+    HXDeviceModeIphone6,
+    HXDeviceModeIphone6Plus
 };
 
 
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
  *
  *  @return 设备机型
  */
-+ (SCDeviceModelType)currentModel;
++ (HXDeviceMode)currentModel;
 
 /**
  *  当前设备是否是5S及其以前的设备
