@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, SCSystemVersion) {
-    SCSystemVersionUnknow,
-    SCSystemVersionTooOld,
-    SCSystemVersionTooNew,
-    SCSystemVersionIOS4,
-    SCSystemVersionIOS5,
-    SCSystemVersionIOS6,
-    SCSystemVersionIOS7,
-    SCSystemVersionIOS8,
-    SCSystemVersionIOS9
+
+typedef NS_ENUM(NSUInteger, HXSystemVersion) {
+    HXSystemVersionTooOld,
+    HXSystemVersionTooNew,
+    HXSystemVersionIOS5,
+    HXSystemVersionIOS6,
+    HXSystemVersionIOS7,
+    HXSystemVersionIOS8,
+    HXSystemVersionIOS9,
+    HXSystemVersionIOS10,
 };
 
 typedef NS_ENUM(NSUInteger, SCDeviceType) {
@@ -38,7 +38,9 @@ typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
     SCDeviceModelTypeIphone6Plus
 };
 
+
 @interface HXVersion : NSObject
+
 
 /**
  *  获取App主版本号
@@ -66,7 +68,7 @@ typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
  *
  *  @return 系统大版本号
  */
-+ (SCSystemVersion)systemVersion;
++ (HXSystemVersion)systemVersion;
 
 /**
  *  获取当前设备类型
@@ -86,5 +88,6 @@ typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
  *  当前设备是否是5S及其以前的设备
  */
 + (BOOL)isIPhone5SPrior;
+
 
 @end

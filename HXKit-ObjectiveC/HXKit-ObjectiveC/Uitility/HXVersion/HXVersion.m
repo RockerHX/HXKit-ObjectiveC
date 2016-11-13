@@ -8,41 +8,47 @@
 
 #import "HXVersion.h"
 
+
 @implementation HXVersion
+
 
 #pragma mark - Public Methods
 + (NSString *)appVersion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
+
 + (NSString *)appBuildVersion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 }
+
 
 + (CGFloat)currentSystemVersion {
     return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
-+ (SCSystemVersion)systemVersion {
+
++ (HXSystemVersion)systemVersion {
     CGFloat version = [self currentSystemVersion];
-    if (version >= 10.0f) {
-        return SCSystemVersionTooNew;
+    if (version >= 11.0f) {
+        return HXSystemVersionTooNew;
+    } else if (version >= 10.0f && version < 11.0f) {
+        return HXSystemVersionIOS9;
     } else if (version >= 9.0f && version < 10.0f) {
-        return SCSystemVersionIOS9;
+        return HXSystemVersionIOS9;
     } else if (version >= 8.0f && version < 9.0f) {
-        return SCSystemVersionIOS8;
+        return HXSystemVersionIOS8;
     } else if (version >= 7.0f && version < 8.0f) {
-        return SCSystemVersionIOS7;
+        return HXSystemVersionIOS7;
     } else if (version >= 6.0f && version < 7.0f) {
-        return SCSystemVersionIOS6;
+        return HXSystemVersionIOS6;
     } else if (version >= 5.0f && version < 6.0f) {
-        return SCSystemVersionIOS5;
-    } else if (version >= 4.0f && version < 5.0f) {
-        return SCSystemVersionIOS4;
+        return HXSystemVersionIOS5;
     } else {
-        return SCSystemVersionTooOld;
+        return HXSystemVersionTooOld;
     }
 }
+
 
 + (SCDeviceType)deviceType {
     NSString *type = [UIDevice currentDevice].model;
@@ -57,6 +63,7 @@
     }
     return SCDeviceTypeUnknow;
 }
+
 
 + (SCDeviceModelType)currentModel {
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
@@ -77,6 +84,7 @@
     return SCDeviceModelTypeIPad;
 }
 
+
 + (BOOL)isIPhone5SPrior {
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
     SCDeviceType deviceType = [self deviceType];
@@ -85,5 +93,6 @@
     }
     return NO;
 }
+
 
 @end
