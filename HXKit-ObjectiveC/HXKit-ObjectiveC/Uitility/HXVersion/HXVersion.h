@@ -21,11 +21,11 @@ typedef NS_ENUM(NSUInteger, HXSystemVersion) {
 };
 
 typedef NS_ENUM(NSUInteger, HXDeviceType) {
-    HXDeviceTypeUnknow,
+    HXDeviceTypeUnknown,
     HXDeviceTypeIPhone,
     HXDeviceTypeIPad,
     HXDeviceTypeIPhoneSimulator,
-    HXDeviceTypeIPadSimulator
+    HXDeviceTypeIPadSimulator,
 };
 
 typedef NS_ENUM(NSUInteger, HXDeviceMode) {
