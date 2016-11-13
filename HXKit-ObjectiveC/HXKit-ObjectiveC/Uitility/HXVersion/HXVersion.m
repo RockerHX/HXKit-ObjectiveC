@@ -56,6 +56,7 @@
     } else if ([type isEqualToString:@"iPad Simulator"]) {
         return HXDeviceTypeIPadSimulator;
     }
+    
     return HXDeviceTypeUnknown;
 }
 
@@ -76,6 +77,7 @@
     } else if ((deviceType == HXDeviceTypeIPad) || (deviceType == HXDeviceTypeIPadSimulator)) {
         return HXDeviceModeIPad;
     }
+    
     return HXDeviceModeUnknown;
 }
 
@@ -84,7 +86,8 @@
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
     HXDeviceType deviceType = [self deviceType];
     if ((deviceType == HXDeviceTypeIPhone) || (deviceType == HXDeviceTypeIPhoneSimulator)) {
-        if ((fabs(screenHeight - 480.0f) < __DBL_EPSILON__) || (fabs(screenHeight - 568.0f) < __DBL_EPSILON__)) return YES;
+        if ((fabs(screenHeight - 480.0f) < __DBL_EPSILON__) || (fabs(screenHeight - 568.0f) < __DBL_EPSILON__)) { return YES;
+        }
     }
     return NO;
 }
