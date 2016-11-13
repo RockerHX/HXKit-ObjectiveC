@@ -23,13 +23,8 @@
 }
 
 
-+ (CGFloat)currentSystemVersion {
-    return [[UIDevice currentDevice].systemVersion floatValue];
-}
-
-
 + (HXSystemVersion)systemVersion {
-    CGFloat version = [self currentSystemVersion];
+    CGFloat version = [[UIDevice currentDevice].systemVersion floatValue];
     if (version >= 11.0f) {
         return HXSystemVersionTooNew;
     } else if (version >= 10.0f && version < 11.0f) {

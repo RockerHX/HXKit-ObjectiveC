@@ -65,13 +65,6 @@ typedef NS_ENUM(NSUInteger, HXDeviceMode) {
 + (NSString *)appBuildVersion;
 
 /**
- *  获取当前系统版本
- *
- *  @return 系统版本号
- */
-+ (CGFloat)currentSystemVersion;
-
-/**
  *  获取当前系统大版本
  *
  *  @return 系统大版本号
