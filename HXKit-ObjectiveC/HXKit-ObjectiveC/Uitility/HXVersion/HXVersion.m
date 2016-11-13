@@ -61,7 +61,7 @@
     } else if ([type isEqualToString:@"iPad Simulator"]) {
         return HXDeviceTypeIPadSimulator;
     }
-    return HXDeviceTypeUnknow;
+    return HXDeviceTypeUnknown;
 }
 
 
@@ -70,18 +70,18 @@
     HXDeviceType deviceType = [self deviceType];
     if ((deviceType == HXDeviceTypeIPhone) || (deviceType == HXDeviceTypeIPhoneSimulator)) {
         if (fabs(screenHeight - 480.0f) < __DBL_EPSILON__) {
-            return HXDeviceModeIphone4_4S;
+            return HXDeviceMode3_5Inch;
         } else if (fabs(screenHeight - 568.0f) < __DBL_EPSILON__) {
-            return HXDeviceModeIphone5_5S;
+            return HXDeviceMode4_0Inch;
         } else if (fabs(screenHeight - 667.0f) < __DBL_EPSILON__) {
-            return HXDeviceModeIphone6;
+            return HXDeviceMode4_7Inch;
         } else if (fabs(screenHeight - 736.0f) < __DBL_EPSILON__) {
-            return HXDeviceModeIphone6Plus;
-        } else {
-            return HXDeviceModeUnknow;
+            return HXDeviceMode5_5Inch;
         }
+    } else if ((deviceType == HXDeviceTypeIPad) || (deviceType == HXDeviceTypeIPadSimulator)) {
+        return HXDeviceModeIPad;
     }
-    return HXDeviceModeIPad;
+    return HXDeviceModeUnknown;
 }
 
 

@@ -29,13 +29,21 @@ typedef NS_ENUM(NSUInteger, HXDeviceType) {
 };
 
 typedef NS_ENUM(NSUInteger, HXDeviceMode) {
-    HXDeviceModeUnknow,
+    HXDeviceModeUnknown,
     HXDeviceModeIPad,
-    HXDeviceModeIphone4_4S,
-    HXDeviceModeIphone5_5S,
+    HXDeviceMode3_5Inch,
+    HXDeviceMode4_0Inch,
+    HXDeviceMode4_7Inch,
+    HXDeviceMode5_5Inch,
+    HXDeviceModeIphone4_4S = HXDeviceMode3_5Inch,
+    HXDeviceModeIphone5_5S = HXDeviceMode4_0Inch,
     HXDeviceModeIphone5SPrior,
-    HXDeviceModeIphone6,
-    HXDeviceModeIphone6Plus
+    HXDeviceModeIphone6 = HXDeviceMode4_7Inch,
+    HXDeviceModeIphone6Plus = HXDeviceMode5_5Inch,
+    HXDeviceModeIphone6s = HXDeviceMode4_7Inch,
+    HXDeviceModeIphone6sPlus = HXDeviceMode5_5Inch,
+    HXDeviceModeIphone7 = HXDeviceMode4_7Inch,
+    HXDeviceModeIphone7Plus = HXDeviceMode5_5Inch,
 };
 
 
