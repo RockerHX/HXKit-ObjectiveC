@@ -20,12 +20,12 @@ typedef NS_ENUM(NSUInteger, HXSystemVersion) {
     HXSystemVersionIOS10,
 };
 
-typedef NS_ENUM(NSUInteger, SCDeviceType) {
-    SCDeviceTypeUnknow,
-    SCDeviceTypeIPhone,
-    SCDeviceTypeIPad,
-    SCDeviceTypeIPhoneSimulator,
-    SCDeviceTypeIPadSimulator
+typedef NS_ENUM(NSUInteger, HXDeviceType) {
+    HXDeviceTypeUnknow,
+    HXDeviceTypeIPhone,
+    HXDeviceTypeIPad,
+    HXDeviceTypeIPhoneSimulator,
+    HXDeviceTypeIPadSimulator
 };
 
 typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
@@ -75,7 +75,7 @@ typedef NS_ENUM(NSUInteger, SCDeviceModelType) {
  *
  *  @return 设备类型
  */
-+ (SCDeviceType)deviceType;
++ (HXDeviceType)deviceType;
 
 /**
  *  获取当前机型
