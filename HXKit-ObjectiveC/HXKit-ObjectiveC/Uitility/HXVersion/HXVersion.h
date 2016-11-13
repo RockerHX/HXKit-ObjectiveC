@@ -1,8 +1,9 @@
 //
 //  HXVersion.h
+//  HXKit-ObjectiveC
 //
 //  Created by RockerHX
-//  Copyright (c) Andy Shaw. All rights reserved.
+//  Copyright © 2016年 Caver. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
