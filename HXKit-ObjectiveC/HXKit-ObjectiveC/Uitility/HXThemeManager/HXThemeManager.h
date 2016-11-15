@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, HXThemeStyle) {
 @property (nonatomic, strong, readonly)      UIColor *themeColor;
 
 
-+ (instancetype)share;
++ (instancetype)manager;
 
 - (void)apply;
 - (UIColor *)themeColorWithStyle:(HXThemeStyle)themeStyle;

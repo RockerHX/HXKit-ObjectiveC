@@ -21,7 +21,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 
 
 #pragma mark - Init Methods
-+ (instancetype)share {
++ (instancetype)manager {
     static HXThemeManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
