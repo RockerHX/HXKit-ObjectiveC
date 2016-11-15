@@ -13,8 +13,8 @@
 typedef BOOL(^StartBlock)(HXCaptchaButton *);
 typedef void(^EndBlock)(HXCaptchaButton *);
 
-static NSTimeInterval TimeOutFlag = 0;
-static NSTimeInterval TimeDuration = 60.0f;
+static NSTimeInterval HXCBTimeOutFlag = 0;
+static NSTimeInterval HXCBTimeDuration = 60.0f;
 
 static NSString *TextPrompt = @"获取验证码";
 
@@ -53,7 +53,7 @@ static NSString *TextPrompt = @"获取验证码";
 #pragma mark - Config Methods
 - (void)initConfigure {
     
-    _duration = TimeDuration;
+    _duration = HXCBTimeDuration;
     _prompt = TextPrompt;
     
     [self setButtonPrompt];
@@ -90,7 +90,7 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
                 _timer = GreateDispatchTimer(NSEC_PER_SEC, USEC_PER_SEC, dispatch_get_main_queue(), ^{
                     [self setTitle:[NSString stringWithFormat:@"%@s", @(_timeOut)] forState:UIControlStateNormal];
                     
-                    if(_timeOut <= TimeOutFlag) {
+                    if(_timeOut <= HXCBTimeOutFlag) {
                         [self stop];
                     }
                     _timeOut--;
