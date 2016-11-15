@@ -10,7 +10,7 @@
 #import "HXThemeManager.h"
 
 
-static NSString *SelectedThemeKey = @"SelectedTheme";
+static NSString *HXSelectedThemeKey = @"HXSelectedThemeKey";
 
 
 @implementation HXThemeManager
@@ -28,7 +28,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 
 #pragma mark - Setter And Getter
 - (HXThemeStyle)themeStyle {
-    HXThemeStyle theme = [[[NSUserDefaults standardUserDefaults] valueForKey:SelectedThemeKey] integerValue];
+    HXThemeStyle theme = [[[NSUserDefaults standardUserDefaults] valueForKey:HXSelectedThemeKey] integerValue];
     return theme;
 }
 
@@ -43,7 +43,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 
 #pragma mark - Public Methods
 - (void)apply {
-    [[NSUserDefaults standardUserDefaults] setValue:@(_style) forKey:SelectedThemeKey];
+    [[NSUserDefaults standardUserDefaults] setValue:@(_style) forKey:HXSelectedThemeKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[UITabBar appearance] setTintColor:self.color];
