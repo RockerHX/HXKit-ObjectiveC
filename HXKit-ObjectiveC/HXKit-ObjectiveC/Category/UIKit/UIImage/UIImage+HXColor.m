@@ -6,10 +6,12 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "UIImage+HXColor.h"
 
 
 @implementation UIImage (HXColor)
+
 
 + (instancetype)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
@@ -23,5 +25,6 @@
     
     return image;
 }
+
 
 @end

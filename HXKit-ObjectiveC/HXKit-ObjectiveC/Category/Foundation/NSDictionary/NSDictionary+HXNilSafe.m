@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "NSDictionary+HXNilSafe.h"
 #import "NSObject+HXSwizzling.h"
 
@@ -20,7 +21,6 @@
         [self hx_swizzleClassMethod:@selector(dictionaryWithObjects:forKeys:count:) withMethod:@selector(hx_dictionaryWithObjects:forKeys:count:)];
     });
 }
-
 
 + (instancetype)hx_dictionaryWithObjects:(const id [])objects forKeys:(const id<NSCopying> [])keys count:(NSUInteger)cnt {
     id safeObjects[cnt];
@@ -42,7 +42,6 @@
     
     return [self hx_dictionaryWithObjects:safeObjects forKeys:safeKeys count:j];
 }
-
 
 - (instancetype)hx_initWithObjects:(const id [])objects forKeys:(const id<NSCopying> [])keys count:(NSUInteger)cnt {
     id safeObjects[cnt];

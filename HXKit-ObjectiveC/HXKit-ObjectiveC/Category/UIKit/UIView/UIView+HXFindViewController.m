@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "UIView+HXFindViewController.h"
 
 
@@ -16,7 +17,6 @@
     // convenience function for casting and to "mask" the recursive function
     return (UIViewController *)[self traverseResponderChainForViewController];
 }
-
 
 - (__kindof UIResponder *)traverseResponderChainForViewController {
     id nextResponder = [self nextResponder];

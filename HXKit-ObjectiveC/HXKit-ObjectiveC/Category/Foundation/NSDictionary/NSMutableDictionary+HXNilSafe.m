@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "NSMutableDictionary+HXNilSafe.h"
 #import "NSObject+HXSwizzling.h"
 
@@ -22,7 +23,6 @@
     });
 }
 
-
 - (void)hx_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
     if (!aKey) {
         return;
@@ -34,7 +34,6 @@
     
     [self hx_setObject:anObject forKey:aKey];
 }
-
 
 - (void)hx_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key {
     if (!key) {

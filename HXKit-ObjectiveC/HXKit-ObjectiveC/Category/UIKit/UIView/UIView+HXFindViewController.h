@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
 
@@ -14,5 +15,6 @@
 
 - (UIViewController *)firstAvailableViewController;
 - (__kindof UIResponder *)traverseResponderChainForViewController;
+
 
 @end

@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "NSObject+HXSwizzling.h"
 #import <objc/runtime.h>
 
@@ -33,7 +34,6 @@
                                    class_getInstanceMethod(self, altSel));
     return YES;
 }
-
 
 + (BOOL)hx_swizzleClassMethod:(SEL)origSel withMethod:(SEL)altSel {
     return [object_getClass(self) hx_swizzleMethod:origSel withMethod:altSel];

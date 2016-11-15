@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "HXCaptchaButton.h"
 
 
@@ -40,7 +41,6 @@ static NSString *TextPrompt = @"获取验证码";
     return self;
 }
 
-
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     
     self = [super initWithCoder:aDecoder];
@@ -49,7 +49,6 @@ static NSString *TextPrompt = @"获取验证码";
     }
     return self;
 }
-
 
 #pragma mark - Config Methods
 - (void)initConfigure {
@@ -60,13 +59,11 @@ static NSString *TextPrompt = @"获取验证码";
     [self setButtonPrompt];
 }
 
-
 #pragma mark - Parent Methods
 - (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event {
     
     [self startCountDown];
 }
-
 
 #pragma mark - Private Methods
 dispatch_source_t GreateDispatchTimer(uint64_t interval,
@@ -82,7 +79,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     }
     return timer;
 }
-
 
 - (void)startCountDown {
     
@@ -106,7 +102,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     }
 }
 
-
 - (void)setButtonPrompt {
     
     if (_timer) {
@@ -116,7 +111,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     [self setTitle:_prompt forState:UIControlStateNormal];
 }
 
-
 #pragma mark - Public Methods
 - (void)timing:(BOOL (^)(HXCaptchaButton *))start
            end:(void (^)(HXCaptchaButton *))end {
@@ -125,7 +119,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     _endBlock = end;
 }
 
-
 - (void)timingWithDuration:(NSTimeInterval)duration
                      start:(BOOL(^)(HXCaptchaButton *))start
                        end:(void(^)(HXCaptchaButton *))end {
@@ -133,7 +126,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     _duration = duration;
     [self timing:start end:end];
 }
-
 
 - (void)stop {
     
@@ -144,7 +136,6 @@ dispatch_source_t GreateDispatchTimer(uint64_t interval,
     }
     self.enabled = YES;
 }
-
 
 #pragma mark - Delloc Methods
 - (void)dealloc {

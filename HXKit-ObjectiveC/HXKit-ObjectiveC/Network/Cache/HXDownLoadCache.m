@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "HXDownLoadCache.h"
 
 
@@ -25,18 +26,15 @@ static float TimeOutInterval = 10.0f;
     return cache;
 }
 
-
 + (instancetype)cacheWithCache:(NSURLCache *)cache {
     [NSURLCache setSharedURLCache:cache];
     return [self cache];
 }
 
-
 #pragma mark - Property
 - (NSURLCache *)cache {
     return [NSURLCache sharedURLCache];
 }
-
 
 #pragma mark - Public Methods
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
@@ -45,13 +43,11 @@ static float TimeOutInterval = 10.0f;
     return [self downLoadWithRequest:request completionHandler:completionHandler];
 }
 
-
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
     
     NSURLSession *session = [NSURLSession sharedSession];
     return [self downLoadWithRequest:request session:session completionHandler:completionHandler];
 }
-
 
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url configuration:(NSURLSessionConfiguration *)configuration completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
     
@@ -59,13 +55,11 @@ static float TimeOutInterval = 10.0f;
     return [self downLoadWithRequest:request configuration:configuration completionHandler:completionHandler];
 }
 
-
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request configuration:(NSURLSessionConfiguration *)configuration completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     return [self downLoadWithRequest:request session:session completionHandler:completionHandler];
 }
-
 
 #pragma mark - Private Methods
 - (NSURLSessionDownloadTask *)downLoadWithRequest:(NSURLRequest *)request session:(NSURLSession *)session completionHandler:(void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {

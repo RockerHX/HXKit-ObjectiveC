@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "NSObject+HXLoginAction.h"
 
 
@@ -19,7 +20,6 @@ NSString *const hx_kLogoutNotification  = @"hx_kLogoutNotification";
 - (void)shouldLogin {
     [[NSNotificationCenter defaultCenter] postNotificationName:hx_kLoginNotification object:nil];
 }
-
 
 - (void)shouldLogout {
     [[NSNotificationCenter defaultCenter] postNotificationName:hx_kLogoutNotification object:nil];

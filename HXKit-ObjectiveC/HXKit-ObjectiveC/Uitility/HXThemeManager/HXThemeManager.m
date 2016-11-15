@@ -16,7 +16,7 @@ static NSString *HXSelectedThemeKey = @"HXSelectedThemeKey";
 @implementation HXThemeManager
 
 
-#pragma mark - Init Methods
+#pragma mark - Singleton Methods
 + (instancetype)manager {
     static HXThemeManager *manager = nil;
     static dispatch_once_t onceToken;
@@ -26,7 +26,7 @@ static NSString *HXSelectedThemeKey = @"HXSelectedThemeKey";
     return manager;
 }
 
-#pragma mark - Setter And Getter
+#pragma mark - Property
 - (HXThemeStyle)themeStyle {
     HXThemeStyle theme = [[[NSUserDefaults standardUserDefaults] valueForKey:HXSelectedThemeKey] integerValue];
     return theme;

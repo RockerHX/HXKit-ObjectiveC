@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "UIImage+HXLoaded.h"
 #import "NSObject+HXSwizzling.h"
 
@@ -20,7 +21,6 @@
         [self hx_swizzleMethod:@selector(imageNamed:) withMethod:@selector(hx_imageNamed:)];
     });
 }
-
 
 + (instancetype)hx_imageNamed:(NSString *)name {
     
