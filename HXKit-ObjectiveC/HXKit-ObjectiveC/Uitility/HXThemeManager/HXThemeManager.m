@@ -38,7 +38,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 
 - (void)setThemeStyle:(HXThemeStyle)themeStyle {
     _themeStyle = themeStyle;
-    [self applyTheme];
+    [self apply];
 }
 
 - (UIColor *)themeColor {
@@ -46,7 +46,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 }
 
 #pragma mark - Public Methods
-- (void)applyTheme {
+- (void)apply {
     [[NSUserDefaults standardUserDefaults] setValue:@(_themeStyle) forKey:SelectedThemeKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
