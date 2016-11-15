@@ -2,8 +2,8 @@
 //  HXVersion.h
 //  HXKit-ObjectiveC
 //
-//  Created by RockerHX
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

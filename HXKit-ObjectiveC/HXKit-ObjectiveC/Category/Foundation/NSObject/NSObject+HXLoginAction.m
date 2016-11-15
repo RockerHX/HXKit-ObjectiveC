@@ -2,8 +2,8 @@
 //  NSObject+HXLoginAction.m
 //  HXKit-ObjectiveC
 //
-//  Created by miaios on 16/2/23.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

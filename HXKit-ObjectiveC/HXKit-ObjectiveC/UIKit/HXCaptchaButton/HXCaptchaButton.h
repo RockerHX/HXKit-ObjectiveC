@@ -2,8 +2,8 @@
 //  HXCaptchaButton.h
 //  HXKit-ObjectiveC
 //
-//  Created by ShiCang on 14/12/31.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

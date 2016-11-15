@@ -2,8 +2,8 @@
 //  NSDictionary+HXNilSafe.h
 //  HXKit-ObjectiveC
 //
-//  Created by ShiCang on 16/9/28.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

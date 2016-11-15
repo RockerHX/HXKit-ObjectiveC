@@ -2,8 +2,8 @@
 //  UIImage+HXColor.h
 //  HXKit-ObjectiveC
 //
-//  Created by ShiCang on 16/10/29.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

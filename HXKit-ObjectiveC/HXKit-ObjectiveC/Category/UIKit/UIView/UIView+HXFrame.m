@@ -2,8 +2,8 @@
 //  UIView+HXFrame.m
 //  HXKit-ObjectiveC
 //
-//  Created by RockerHX on 14/2/28.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 

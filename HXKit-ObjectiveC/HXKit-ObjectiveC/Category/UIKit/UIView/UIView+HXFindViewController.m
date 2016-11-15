@@ -2,8 +2,8 @@
 //  UIView+HXFindViewController.m
 //  HXKit-ObjectiveC
 //
-//  Created by RockerHX on 16/1/18.
-//  Copyright © 2016年 Caver. All rights reserved.
+//  Created by RockerHX.
+//  Copyright © Caver. All rights reserved.
 //
 
 
