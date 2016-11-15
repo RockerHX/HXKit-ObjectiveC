@@ -6,10 +6,12 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
+
 
 typedef NS_ENUM(NSUInteger, HXThemeStyle) {
     HXThemeStyleDefault,
@@ -19,16 +21,20 @@ typedef NS_ENUM(NSUInteger, HXThemeStyle) {
     HXThemeStyleBlack
 };
 
+
 @interface HXThemeManager : NSObject
+
 
 @property (nonatomic, assign)           HXThemeStyle  themeStyle;
 @property (nonatomic, strong, readonly)      UIColor *themeColor;
+
 
 + (instancetype)share;
 
 - (void)applyTheme;
 - (UIColor *)themeColorWithStyle:(HXThemeStyle)themeStyle;
 
-NS_ASSUME_NONNULL_END
 
 @end
+
+NS_ASSUME_NONNULL_END

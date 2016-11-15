@@ -6,14 +6,19 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "HXThemeManager.h"
+
 
 static NSString *SelectedThemeKey = @"SelectedTheme";
 
+
 @implementation HXThemeManager
+
 
 @synthesize themeStyle = _themeStyle;
 @synthesize themeColor = _themeColor;
+
 
 #pragma mark - Init Methods
 + (instancetype)share {
