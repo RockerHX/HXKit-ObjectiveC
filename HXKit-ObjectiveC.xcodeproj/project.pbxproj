@@ -24,6 +24,7 @@
 		48E178E71DD3140A00C925B7 /* UIView+HXFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178E61DD3140A00C925B7 /* UIView+HXFindViewController.m */; };
 		48E178EA1DD3170D00C925B7 /* UIView+HXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178E91DD3170D00C925B7 /* UIView+HXFrame.m */; };
 		48E178F41DD8746A00C925B7 /* HXVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178F31DD8746A00C925B7 /* HXVersion.m */; };
+		48E178F81DDB157C00C925B7 /* HXThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E178F71DDB157C00C925B7 /* HXThemeManager.m */; };
 		48EBFA121DA78AA20016F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA111DA78AA20016F047 /* main.m */; };
 		48EBFA151DA78AA20016F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA141DA78AA20016F047 /* AppDelegate.m */; };
 		48EBFA181DA78AA20016F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA171DA78AA20016F047 /* ViewController.m */; };
@@ -80,6 +81,8 @@
 		48E178E91DD3170D00C925B7 /* UIView+HXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HXFrame.m"; sourceTree = "<group>"; };
 		48E178F21DD8746A00C925B7 /* HXVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVersion.h; sourceTree = "<group>"; };
 		48E178F31DD8746A00C925B7 /* HXVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVersion.m; sourceTree = "<group>"; };
+		48E178F61DDB157C00C925B7 /* HXThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXThemeManager.h; sourceTree = "<group>"; };
+		48E178F71DDB157C00C925B7 /* HXThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXThemeManager.m; sourceTree = "<group>"; };
 		48EBFA0D1DA78AA20016F047 /* HXKit-ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HXKit-ObjectiveC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EBFA111DA78AA20016F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48EBFA131DA78AA20016F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -342,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				48E178F11DD8746A00C925B7 /* HXVersion */,
+				48E178F51DDB157C00C925B7 /* HXThemeManager */,
 			);
 			path = Uitility;
 			sourceTree = "<group>";
@@ -353,6 +357,15 @@
 				48E178F31DD8746A00C925B7 /* HXVersion.m */,
 			);
 			path = HXVersion;
+			sourceTree = "<group>";
+		};
+		48E178F51DDB157C00C925B7 /* HXThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				48E178F61DDB157C00C925B7 /* HXThemeManager.h */,
+				48E178F71DDB157C00C925B7 /* HXThemeManager.m */,
+			);
+			path = HXThemeManager;
 			sourceTree = "<group>";
 		};
 		48EBFA041DA78AA20016F047 = {
@@ -583,6 +596,7 @@
 			files = (
 				4859A6711DAFDE4400A6832D /* HXCaptchaButton.m in Sources */,
 				4859A6561DA7B46800A6832D /* NSMutableDictionary+HXNilSafe.m in Sources */,
+				48E178F81DDB157C00C925B7 /* HXThemeManager.m in Sources */,
 				4859A64B1DA7B3E100A6832D /* NSNull+HXNilSafe.m in Sources */,
 				48E178EA1DD3170D00C925B7 /* UIView+HXFrame.m in Sources */,
 				48E178E31DD3136C00C925B7 /* NSObject+HXLoginAction.m in Sources */,
