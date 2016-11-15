@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Caver. All rights reserved.
 //
 
+
 #import "HXVersion.h"
 
 
@@ -17,11 +18,9 @@
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
-
 + (NSString *)appBuildVersion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 }
-
 
 + (HXSystemVersion)systemVersion {
     CGFloat version = [[UIDevice currentDevice].systemVersion floatValue];
@@ -44,7 +43,6 @@
     }
 }
 
-
 + (HXDeviceType)deviceType {
     NSString *type = [UIDevice currentDevice].model;
     if ([type isEqualToString:@"iPhone"]) {
@@ -59,7 +57,6 @@
     
     return HXDeviceTypeUnknown;
 }
-
 
 + (HXDeviceMode)currentModel {
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
@@ -80,7 +77,6 @@
     
     return HXDeviceModeUnknown;
 }
-
 
 + (BOOL)isIPhone5SPrior {
     CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
