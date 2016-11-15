@@ -32,7 +32,7 @@ typedef NS_ENUM(NSUInteger, HXThemeStyle) {
 + (instancetype)manager;
 
 - (void)apply;
-- (UIColor *)themeColorWithStyle:(HXThemeStyle)themeStyle;
+- (UIColor *)colorWithStyle:(HXThemeStyle)style;
 
 
 @end

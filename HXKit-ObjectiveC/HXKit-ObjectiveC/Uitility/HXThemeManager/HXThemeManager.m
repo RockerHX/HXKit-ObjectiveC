@@ -41,7 +41,7 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
 }
 
 - (UIColor *)themeColor {
-    return [self themeColorWithStyle:_style];
+    return [self colorWithStyle:_style];
 }
 
 #pragma mark - Public Methods
@@ -52,9 +52,9 @@ static NSString *SelectedThemeKey = @"SelectedTheme";
     [[UITabBar appearance] setTintColor:self.themeColor];
 }
 
-- (UIColor *)themeColorWithStyle:(HXThemeStyle)themeStyle {
+- (UIColor *)colorWithStyle:(HXThemeStyle)style {
     UIColor *color = nil;
-    switch (themeStyle) {
+    switch (style) {
         case HXThemeStyleOrange: {
             color = [UIColor colorWithRed:252.0f/255.0f green:139.0f/255.0f blue:69.0f/255.0f alpha:1.0f];
             break;
