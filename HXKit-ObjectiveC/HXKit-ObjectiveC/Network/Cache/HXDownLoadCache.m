@@ -10,7 +10,7 @@
 #import "HXDownLoadCache.h"
 
 
-static float TimeOutInterval = 10.0f;
+static float HXDLCTimeOutInterval = 10.0f;
 
 
 @implementation HXDownLoadCache
@@ -39,7 +39,7 @@ static float TimeOutInterval = 10.0f;
 #pragma mark - Public Methods
 - (NSURLSessionDownloadTask *)downLoadWithURL:(NSURL *)url completionHandler:(nonnull void (^)(HXDownLoadCache *, NSData *, NSURLResponse *, NSError *))completionHandler {
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:TimeOutInterval];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:HXDLCTimeOutInterval];
     return [self downLoadWithRequest:request completionHandler:completionHandler];
 }
 
