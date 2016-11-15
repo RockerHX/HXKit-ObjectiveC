@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, HXThemeStyle) {
 @interface HXThemeManager : NSObject
 
 
-@property (nonatomic, assign)           HXThemeStyle  themeStyle;
+@property (nonatomic, assign)           HXThemeStyle  style;
 @property (nonatomic, strong, readonly)      UIColor *themeColor;
 
 
